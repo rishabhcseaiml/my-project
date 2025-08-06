@@ -8,7 +8,6 @@ VALID INPUTS:
     "Sparsh Sahni"
     "Silvester Stallone"
 INVALID INPUTS:
-
     "sparsh123" - Contains numbers should trigger pattern mismatch
     "sparsh_sahni" - Contains underscore that is invalid character
     "SPARSH@sahni" - Contains special character
