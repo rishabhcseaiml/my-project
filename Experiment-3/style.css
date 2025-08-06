@@ -1,0 +1,110 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; 
+    background-color: #f0f2f5;
+    color: #111827;
+ 
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    height: 100vh;
+}
+
+.dashboard-header { grid-area: header; }
+.dashboard-sidebar { grid-area: sidebar; }
+.dashboard-main { grid-area: main; }
+.dashboard-footer { grid-area: footer; }
+.dashboard-header {
+    background-color: #2e7d32; 
+    color: #f9fafb; 
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.dashboard-header h1 {
+    font-size: 1.5rem;
+}
+.dashboard-sidebar {
+    background-color: #ffffff; 
+    padding: 2rem 1.5rem;
+    border-right: 1px solid #e5e7eb; 
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav a {
+    color: #111827; 
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.sidebar-nav a:hover {
+    color: #3b82f6; /* Blue on hover */
+}
+
+/* --- Main Content Styles --- */
+.dashboard-main {
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.dashboard-main h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* --- Footer Styles --- */
+.dashboard-footer {
+    background-color: #2e7d32; /* Green background */
+    color: #f9fafb; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Layout for Smaller Screens --- */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto; /* Header, Sidebar, Main, Footer */
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+
+    .dashboard-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 1rem 1.5rem;
+    }
+
+    .sidebar-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sidebar-nav li {
+        margin-bottom: 0;
+    }
+}
