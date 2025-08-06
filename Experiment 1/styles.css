@@ -1,0 +1,69 @@
+/* --- Global Styles --- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: system-ui, sans-serif;
+}
+
+/* --- Card Container --- */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+/* --- Balance Display --- */
+.balance {
+    font-size: 2.5em;
+    /* Larger font size for the balance */
+    font-weight: bold;
+    color: #38761d;
+    margin-bottom: 25px;
+}
+
+/* --- Button Container --- */
+.actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Space between the buttons */
+}
+
+/* --- General Button Styles --- */
+.btn {
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    /* Slight fade on hover */
+}
+
+/* --- Specific Button Colors --- */
+.deposit-btn {
+    background-color: #38761d;
+    /* Green */
+}
+
+.withdraw-btn {
+    background-color: #cc0000;
+    /* Red */
+}
