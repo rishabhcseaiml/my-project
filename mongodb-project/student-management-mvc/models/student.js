@@ -7,4 +7,4 @@ const studentSchema = new mongoose.Schema({
   city: { type: String }  // Add this line
 });
 
-module.exports = mongoose.model('Student', studentSchema);
+mongoose.model("Student", studentSchema, "students");

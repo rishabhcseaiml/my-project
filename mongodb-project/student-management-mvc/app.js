@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Connect to MongoDB (local Compass)
-mongoose.connect('mongodb://localhost:27017/ChandigarhUniversity/', {
+mongoose.connect('mongodb://localhost:27017/ChandigarhUniversity', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
