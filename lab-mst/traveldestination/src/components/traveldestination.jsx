@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./traveldestination.css";
 
 const initialDestinations = [
-  { id: 1, place: "Paris", country: "France" },
+  { id: 1, place: "mumbai", country: "india" },
   { id: 2, place: "Tokyo", country: "Japan" },
   { id: 3, place: "Sydney", country: "Australia" },
 ];
